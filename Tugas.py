@@ -48,8 +48,6 @@ FYI:
 
 > Another information about this program isn't implemented yet, lazy dev spirit.
 
-> Thanks to chat gpt i don't have to read pillow documentation XD.
-
                                 - Author
 ''')
 
