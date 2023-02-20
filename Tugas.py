@@ -18,7 +18,7 @@ def main():
 Option :
 
 1. Generate Image
-2. Tutorial
+2. Info
 3. quit
         ''')
         menu = input('Select Number >> ')
@@ -26,9 +26,9 @@ Option :
         if menu == '3' or menu.lower() == 'quit':
             print('Thanks')
             exit()
-        elif menu == '2' or menu.lower() == 'tutorial':
+        elif menu == '2' or menu.lower() == 'info':
             print()
-            tutorial()
+            info()
         elif menu == '1' or menu.lower() == 'generate image':
             print()
             generate()
@@ -36,7 +36,7 @@ Option :
             print('Invalid option, see you later')
             exit()
 
-def tutorial():
+def info():
     print('''
 FYI:
 
