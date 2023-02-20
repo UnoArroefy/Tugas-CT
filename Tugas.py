@@ -64,7 +64,7 @@ def generate():
         print("\nInput must be a number.\nCannot process further")
         
     try: 
-        width = int(input('Width ; '))
+        width = int(input('Width : '))
         if width > len(data):
             print('\nWidth is greater than data.\nCannot process further')
             
@@ -78,13 +78,12 @@ def generate():
 
     scaling_factor = 200
     image = Image.new('1', (width * scaling_factor, height * scaling_factor))
-    image.load()
+    pixels = image.load()
 
     for i, value in enumerate(data):
         x, y = (i % width) * scaling_factor, (i // width) * scaling_factor
         for j in range(scaling_factor):
             for k in range(scaling_factor):
-                pixels = image.load()
                 pixels[x + j, y + k] = 1 - value
 
     name = input('Give your image name : ')
